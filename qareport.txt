@@ -1,0 +1,73 @@
+Script started on 2020-05-23 18:11:19-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="185" LINES="44"]
+]0;root@kali: ~/cpeg676/projects/project3/final[01;31mroot@kali[00m:[01;34m~/cpeg676/projects/project3/final[00m# cppcheck --enable=all --suppress=missingIncludeSystem gmail_server.cpp
+Checking gmail_server.cpp ...
+gmail_server.cpp:21:14: warning: Member variable 'gmailServer::DB' is not initialized in the constructor. [uninitMemberVar]
+gmailServer::gmailServer()
+             ^
+gmail_server.h:24:8: style: Unused private function: 'gmailServer::checkEndInput' [unusedPrivateFunction]
+  void checkEndInput(string user_name);
+       ^
+gmail_server.cpp:26:2: performance: Variable 'userName' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+ userName = "mrunal"; // dummy userName initialization
+ ^
+gmail_server.cpp:27:2: performance: Variable 'passWord' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+ passWord = "mrunal"; //dummy pasword initialization
+ ^
+gmail_server.cpp:28:2: performance: Variable 'hashedPass' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+ hashedPass = "mrunal"; //dummy hashed password initiTION
+ ^
+gmail_server.cpp:29:2: performance: Variable 'sessionKey' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+ sessionKey = "mrunal"; //dummy initialization
+ ^
+gmail_server.cpp:212:19: style: Consecutive return, break, continue, goto or throw statements are unnecessary. [duplicateBreak]
+                  break;
+                  ^
+gmail_server.cpp:243:40: performance: Function parameter 'user_name' should be passed by const reference. [passedByValue]
+void gmailServer::checkEndInput(string user_name)
+                                       ^
+gmail_server.cpp:560:13: error: Uninitialized variable: mLen [uninitvar]
+ if (strlen(mLen) > 1000) {
+            ^
+gmail_server.cpp:310:23: style: Variable 'is_signIn_success' is assigned a value that is never used. [unreadVariable]
+    is_signIn_success = true;
+                      ^
+gmail_server.cpp:272:10: style: Unused variable: rc [unusedVariable]
+     int rc;
+         ^
+Checking gmail_server.cpp: _MSC_VER...
+gmail_server.cpp:243:0: style: The function 'checkEndInput' is never used. [unusedFunction]
+
+^
+gmail_server.cpp:58:0: style: The function 'closeGmailDatabase' is never used. [unusedFunction]
+
+^
+gmail_server.cpp:40:0: style: The function 'connectGmailDatabase' is never used. [unusedFunction]
+
+^
+gmail_server.cpp:91:0: style: The function 'getChoice' is never used. [unusedFunction]
+
+^
+gmail_server.cpp:350:0: style: The function 'inbox' is never used. [unusedFunction]
+
+^
+gmail_server.cpp:423:0: style: The function 'readMessage' is never used. [unusedFunction]
+
+^
+gmail_server.cpp:71:0: style: The function 'setChoice' is never used. [unusedFunction]
+
+^
+gmail_server.cpp:164:0: style: The function 'setSessionKey' is never used. [unusedFunction]
+
+^
+gmail_server.cpp:186:0: style: The function 'userReg' is never used. [unusedFunction]
+
+^
+gmail_server.cpp:267:0: style: The function 'userSignIn' is never used. [unusedFunction]
+
+^
+gmail_server.cpp:525:0: style: The function 'writeMessage' is never used. [unusedFunction]
+
+^
+]0;root@kali: ~/cpeg676/projects/project3/final[01;31mroot@kali[00m:[01;34m~/cpeg676/projects/project3/final[00m# exit
+
+Script done on 2020-05-23 18:11:37-04:00 [COMMAND_EXIT_CODE="0"]
