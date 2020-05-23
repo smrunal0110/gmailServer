@@ -1,0 +1,150 @@
+Script started on 2020-05-23 19:03:16-04:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="185" LINES="44"]
+]0;root@kali: ~/cpeg676/projects/project3/final[01;31mroot@kali[00m:[01;34m~/cpeg676/projects/project3/final[00m# cppcheck --enable=all --suppress=missingIncludeSystem gmail_server.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csu -[K[K[K[K[Kls[K[Kdata[Ke; pwd
+Sat 23 May 2020 07:03:38 PM EDT
+/root/cpeg676/projects/project3/final
+]0;root@kali: ~/cpeg676/projects/project3/final[01;31mroot@kali[00m:[01;34m~/cpeg676/projects/project3/final[00m# ls -[K[K[K[Kg++ main.cpp gsmail[K[K[K[K[Kmail_server.cpp -l sqlite3 -lgcrypt sha256.cpp
+]0;root@kali: ~/cpeg676/projects/project3/final[01;31mroot@kali[00m:[01;34m~/cpeg676/projects/project3/final[00m# ls -al ./a.out
+-rwxr-xr-x 1 root root 60936 May 23 19:04 [0m[01;32m./a.out[0m
+]0;root@kali: ~/cpeg676/projects/project3/final[01;31mroot@kali[00m:[01;34m~/cpeg676/projects/project3/final[00m# 
+]0;root@kali: ~/cpeg676/projects/project3/final[01;31mroot@kali[00m:[01;34m~/cpeg676/projects/project3/final[00m# ./a.out
+enter 'r' for register new user, 's' to sign-in for existing user, 'q' to quit immediately
+r
+Registration Begins Now. 
+Enter user name ino more than 10 characters and enter "stop " without quotes to end input
+user1
+Enter password no more than 10 characters
+1234
+registered user: user1 successfully.
+enter 'r' for register new user, 's' to sign-in for existing user, 'q' to quit immediately
+r
+Registration Begins Now. 
+Enter user name ino more than 10 characters and enter "stop " without quotes to end input
+user2
+Enter password no more than 10 characters
+1234
+registered user: user2 successfully.
+enter 'r' for register new user, 's' to sign-in for existing user, 'q' to quit immediately
+r
+Registration Begins Now. 
+Enter user name ino more than 10 characters and enter "stop " without quotes to end input
+user3
+Enter password no more than 10 characters
+1234
+registered user: user3 successfully.
+enter 'r' for register new user, 's' to sign-in for existing user, 'q' to quit immediately
+r
+Registration Begins Now. 
+Enter user name ino more than 10 characters and enter "stop " without quotes to end input
+user1
+USER exists already
+Enter user name ino more than 10 characters and enter "stop " without quotes to end input
+user2
+USER exists already
+Enter user name ino more than 10 characters and enter "stop " without quotes to end input
+user3
+USER exists already
+Enter user name ino more than 10 characters and enter "stop " without quotes to end input
+user4
+Enter password no more than 10 characters
+1234
+registered user: user4 successfully.
+enter 'r' for register new user, 's' to sign-in for existing user, 'q' to quit immediately
+s
+Sign-In Begins Now. 
+Please Enter Username: 
+user1
+Please Enter Password: 
+1234
+Sign in successfuil
+
+
+MESSAGES FROM:
+user3
+
+
+ User user1's INBOX
+------------------------------------
+INBOX FOLDER: 1 messages
+
+
+Type 'r' to read message, 'w' to write a message, 'q' to quit.
+w
+To: user4
+Message: This is a messge from user1
+Encrypted Message = a^YC\EV]\KDPPVBWXFDRB
+Message Sent
+Type 'r' to read message, 'w' to write a message, 'q' to quit.
+w
+To: user2
+Message: another from user1
+Encrypted Message = TX_DPPDQE_TBDPD
+Message Sent
+Type 'r' to read message, 'w' to write a message, 'q' to quit.
+q
+enter 'r' for register new user, 's' to sign-in for existing user, 'q' to quit immediately
+s
+Sign-In Begins Now. 
+Please Enter Username: 
+user4
+Please Enter Password: 
+1234
+Sign in successfuil
+
+
+MESSAGES FROM:
+user1
+
+
+ User user4's INBOX
+------------------------------------
+INBOX FOLDER: 1 messages
+
+
+Type 'r' to read message, 'w' to write a message, 'q' to quit.
+r
+Select a SENDER from the list to read message
+user1
+Message from user1:
+This is a messge from user1
+Type 'r' to read message, 'w' to write a message, 'q' to quit.
+q
+enter 'r' for register new user, 's' to sign-in for existing user, 'q' to quit immediately
+s
+Sign-In Begins Now. 
+Please Enter Username: 
+user3
+Please Enter Password: 
+1234
+Sign in successfuil
+
+
+MESSAGES FROM:
+user1
+user2
+
+
+ User user3's INBOX
+------------------------------------
+INBOX FOLDER: 2 messages
+
+
+Type 'r' to read message, 'w' to write a message, 'q' to quit.
+r
+Select a SENDER from the list to read message
+user2
+Message from user2:
+This is a test message from user2
+Type 'r' to read message, 'w' to write a message, 'q' to quit.
+r
+Select a SENDER from the list to read message
+user1
+Message from user1:
+This is a test message from user1
+Type 'r' to read message, 'w' to write a message, 'q' to quit.
+q
+enter 'r' for register new user, 's' to sign-in for existing user, 'q' to quit immediately
+q
+User chose to exit immediatly. 
+]0;root@kali: ~/cpeg676/projects/project3/final[01;31mroot@kali[00m:[01;34m~/cpeg676/projects/project3/final[00m# exit
+
+Script done on 2020-05-23 19:08:06-04:00 [COMMAND_EXIT_CODE="2"]
